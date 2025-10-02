@@ -1,0 +1,19 @@
+compare-csv-files
+=================
+
+.. py:module:: compare-csv-files
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   compare-csv-files.main
+
+
+Module Contents
+---------------
+
+.. py:function:: main(file1, file2)
+

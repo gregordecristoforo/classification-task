@@ -1,0 +1,28 @@
+generate_predictions
+====================
+
+.. py:module:: generate_predictions
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   generate_predictions.get_nearest_labels
+   generate_predictions.nearest_neighbor_predictor
+   generate_predictions.main
+
+
+Module Contents
+---------------
+
+.. py:function:: get_nearest_labels(row, labels, num_neighbors)
+
+.. py:function:: nearest_neighbor_predictor(df_train, df_test, num_neighbors)
+
+.. py:function:: main(num_neighbors, training_data, test_data, predictions)
+
+   Creates predictions on test data with a nearest neighbor classifier.
+
+
