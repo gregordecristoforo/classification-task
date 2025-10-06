@@ -1,3 +1,8 @@
+"""
+Generates a set of training and test samples for a non-linear classification task.
+"""
+__version__ = "0.1.0"
+
 import click
 import numpy as np
 import pandas as pd
