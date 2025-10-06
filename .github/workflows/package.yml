@@ -1,0 +1,31 @@
+name: Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    permissions: write-all
+    runs-on: ubuntu-24.04
+
+    steps:
+    - name: Switch branch
+      uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+    - name: Install Flit
+      run: |
+        pip install flit
+    - name: Flit publish
+      run:
+        flit publish
+      env:
+        FLIT_USERNAME: __token__
+        FLIT_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        # uncomment the following line if you are using test.pypi.org:
+        FLIT_INDEX_URL: https://test.pypi.org/legacy/
+        # this is how you can test the installation from test.pypi.org:
+        pip install --index-url https://test.pypi.org/simple/ package_name
