@@ -21,7 +21,7 @@ jobs:
         pip install flit
     - name: Flit publish
       run:
-        flit publish
+        flit publish --repository testpypi
       env:
         FLIT_USERNAME: __token__
         FLIT_PASSWORD: ${{ secrets.PYPI_TOKEN }}
