@@ -21,10 +21,11 @@ jobs:
         pip install flit
     - name: Flit publish
       run:
-        flit publish --repository testpypi
+        flit publish
       env:
         FLIT_USERNAME: __token__
         FLIT_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        FLIT_INDEX_URL: https://test.pypi.org/legacy/
         # # uncomment the following line if you are using test.pypi.org:
         # FLIT_INDEX_URL: https://test.pypi.org/legacy/
         # # this is how you can test the installation from test.pypi.org:
