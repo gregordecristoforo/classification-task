@@ -1,3 +1,6 @@
+[![DOI](https://sandbox.zenodo.org/badge/1067708095.svg)](https://handle.test.datacite.org/10.5072/zenodo.385141)
+
+
 # 2D classification task using a nearest-neighbor predictor
 
 Little example project we use in teaching.
