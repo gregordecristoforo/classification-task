@@ -1,0 +1,25 @@
+plot_results
+============
+
+.. py:module:: plot_results
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   plot_results.scatter_plot
+   plot_results.main
+
+
+Module Contents
+---------------
+
+.. py:function:: scatter_plot(data, title, color_column, color_scheme)
+
+.. py:function:: main(training_data, predictions, output_chart)
+
+   Reads training data and predictions and creates a scatter plot to visualize the results.
+
+

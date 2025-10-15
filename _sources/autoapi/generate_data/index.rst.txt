@@ -1,0 +1,48 @@
+generate_data
+=============
+
+.. py:module:: generate_data
+
+.. autoapi-nested-parse::
+
+   Generates a set of training and test samples for a non-linear classification task.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   generate_data.__version__
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   generate_data.normal_distribution
+   generate_data.circular_distribution
+   generate_data.generate_data
+   generate_data.main
+
+
+Module Contents
+---------------
+
+.. py:data:: __version__
+   :value: '0.1.0'
+
+
+.. py:function:: normal_distribution(rng, loc, scale, num_samples, label)
+
+.. py:function:: circular_distribution(rng, r_min, r_max, num_samples, label)
+
+.. py:function:: generate_data(rng, num_samples)
+
+.. py:function:: main(num_samples, training_data, test_data)
+
+   Program that generates a set of training and test samples for a non-linear classification task.
+
+
